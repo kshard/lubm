@@ -33,7 +33,7 @@ func Query1(course ...string) string {
 		f(s, p, o).
 
 		q(x) :-
-		  f(x, ub:takesCourse, <%s>),
+			f(x, ub:takesCourse, <%s>),
 			f(x, rdf:type, ub:GraduateStudent).
 	`, c)
 }
@@ -55,7 +55,7 @@ func Query2() string {
 		f(s, p, o).
 
 		q(y, z, x) :-
-		  f(y, rdf:type, ub:University),
+			f(y, rdf:type, ub:University),
 
 			f(x, ub:undergraduateDegreeFrom, y),
 			f(x, rdf:type, ub:GraduateStudent),
@@ -83,7 +83,7 @@ func Query3(author ...string) string {
 		f(s, p, o).
 
 		q(x) :-
-		  f(x, ub:publicationAuthor, <%s>),
+			f(x, ub:publicationAuthor, <%s>),
 			f(x, rdf:type, ub:Publication).
 	`, a)
 }
@@ -153,7 +153,7 @@ func Query6() string {
 		f(s, p, o).
 
 		q(x) :-
-		  f(x, rdf:type, ub:UndergraduateStudent).
+			f(x, rdf:type, ub:UndergraduateStudent).
 	`
 }
 
